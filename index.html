@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>القرآن الكريم - Mohamed Gamal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Amiri', serif;
+    }
+    .ayah:hover {
+      background-color: #f3f4f6;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-white transition-colors">
+  <header class="text-center p-6 bg-green-700 text-white shadow">
+    <h1 class="text-3xl font-bold">القرآن الكريم</h1>
+    <p class="text-lg">منصة إسلامية - تصميم وتطوير: Mohamed Gamal</p>
+  </header>
+  <main class="p-4 max-w-4xl mx-auto">
+    <section class="mb-6 p-4 rounded-lg bg-green-100 dark:bg-green-800">
+      <h2 class="text-xl font-semibold mb-2">آية اليوم</h2>
+      <p id="daily-ayah" class="ayah text-lg"></p>
+    </section>
+    <section class="mb-6 p-4 rounded-lg bg-yellow-100 dark:bg-yellow-800">
+      <h2 class="text-xl font-semibold mb-2">دعاء اليوم</h2>
+      <p id="daily-dua" class="text-lg"></p>
+    </section>
+    <section class="mb-6">
+      <h2 class="text-2xl font-bold mb-4">السور</h2>
+      <ul id="surah-list" class="grid grid-cols-2 md:grid-cols-4 gap-4"></ul>
+    </section>
+    <section id="surah-content" class="hidden transition-all duration-500"></section>
+  </main>
+  <footer class="text-center p-4 bg-gray-200 dark:bg-gray-800 text-sm">
+    جميع الحقوق محفوظة &copy; 2025 - Mohamed Gamal
+  </footer>
+  <script src="scripts/main.js"></script>
+</body>
+</html>
